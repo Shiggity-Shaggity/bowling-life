@@ -6,100 +6,107 @@
 <link rel="stylesheet" href="styles.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
 <style>
-body, html {
-    height: 100%;
-    font-family: "Inconsolata", sans-serif;
-}
-.bgimg {
-    background-position: center;
-    background-size: cover;
-    background-image: url("pins_redball.jpg");
-    min-height: 75%;
-}
-.menu {
-    display: none;
-}
+    body,
+    html {
+        height: 100%;
+        font-family: "Inconsolata", sans-serif;
+    }
+
+    .bgimg {
+        background-position: center;
+        background-size: cover;
+        background-image: url("pins_redball.jpg");
+        min-height: 75%;
+    }
+
+    .menu {
+        display: none;
+    }
+
 </style>
+
 <body>
 
-<div class="top">
-  <div class="row padding black">
-    <div class="col s3">
-      <a href="#" class="button block black">HOME</a>
+    <div class="top">
+        <div class="row padding black">
+            <div class="col s3">
+                <a href="#" class="button block black">HOME</a>
+            </div>
+            <div class="col s3">
+                <a href="about.html" class="button block black">ABOUT</a>
+            </div>
+            <div class="col s3">
+                <a href="#menu" class="button block black">MENU</a>
+            </div>
+            <div class="col s3">
+                <a href="#where" class="button block black">WHERE</a>
+            </div>
+        </div>
     </div>
-    <div class="col s3">
-      <a href="about.html" class="button block black">ABOUT</a>
+
+    <header class="bgimg display-container grayscale-min" id="home">
+        <div class="display-middle center">
+            <span class="text-white" style="font-size:90px">Bowling<br>Life</span>
+    </header>
+
+    <div class="sand grayscale large">
+
+        <div class="container" id="about">
+            <div class="content" style="max-width:700px">
+                <h5 class="center padding-64"><span class="tag wide">ABOUT THE SPORT</span></h5>
+                <h2>What is bowling?</h2>
+
+                <h3>The Lane and Equipment</h3>
+                <p>The playing surface is a lane, 60 feet long from the foul line to the head pin 42 inches wide. On either side of the lane are gutters; if the ball goes off the edge of the lane, it will drop into the gutter and be carried past the pins. The approach is an area 15 feet long, ending at the foul line. The bowler, in making the approach, must not step over the line; 60 feet beyond it is the headpin. The pins are arranged in four rows, with one pin in the first row, two in the second, three in the third, and four in the fourth. They are numbered 1-10; the pins themselves don't carry specific numbers, but the spots on which they are placed do.</p>
+
+                <p>The regulation pin is made of hard maple; it is 15 inches high and has a diameter of 2 ¼ inches at the base and a circumference of 15 inches at its widest point. Weight must be between 3 pounds, 6 ounces and 3 pounds, 10 ounces. The regulation ball is of solid composition, has a circumference of no more than 27 inches, and weighs 10 to 16 pounds. A ball may have two or three finger holes; most bowlers use the three-holed ball, inserting the two middle fingers and the thumb into the holes.</p>
+
+                <p>Bowling in ordinary shoes isn't permitted, because it can damage the lanes. The peculiarities of the sport demand an unmatched pair of shoes. The right-handed bowler wears a left shoe with a relatively slippery sole, usually of hard leather or vinyl, and a right shoe with a rubber sole that will help "brake."</p>
+
+                <h3>Progress of Play</h3>
+                <p>A game is made up of 10 frames. Each frame represents one turn for the bowler, and in each turn the player is allowed to roll the ball twice. If the player knocks down all the pins with the first roll, it is a strike; if not, a second roll at the pins still standing is attempted. If all the pins are knocked down with two balls, it is a spare; if any pins are left standing, it is an "open frame."</p>
+
+                <p>If a bowler commits a foul, by stepping over the foul line during delivery, it counts as a shot, and any pins knocked down are re-spotted without counting. If pins are knocked down by a ball that has entered the gutter, or by a ball bouncing off the rear cushion, they do not count, and are re-spotted.</p>
+
+                <h3>Scoring</h3>
+                <a href="https://www.bowl.com/Welcome/Welcome_Home/Keeping_Score/"><img src="https://www.bowl.com/uploadedImages/Source/Source_Home/frame-full-set-empty.png" alt="Guide to Scoring" /></a>
+                <p>In an open frame, a bowler simply gets credit for the number of pins knocked down. In the case of a spare, a slash mark is recorded in a small square in the upper right-hand corner of that frame on the score sheet, and no score is entered until the first ball of the next frame is rolled.</p>
+
+                <p>Then credit is given for 10 plus the number of pins knocked down with that next ball. For example, a player rolls a spare in the first frame; with the first ball of the second frame, the player knocks down seven pins. The first frame, then, gets 17 points. If two of the remaining three pins get knocked down, 9 pins are added, for a total of 26 in the second frame.</p>
+
+                <p>If a bowler gets a strike, it is recorded with an X in the small square, the score being 10 plus the total number of pins knocked down in the next two rolls. Thus, the bowler who rolls three strikes in a row in the first three frames gets credit for 30 points in the first frame.</p>
+
+                <p>Bowling's perfect score, a <a href="https://en.wikipedia.org/wiki/Perfect_game_(bowling)">300 game</a>, represents 12 strikes in a row--a total of 120 pins knocked down. Why 12 strikes, instead of 10? Because, if a bowler gets a strike in the last frame, the score for that frame can't be recorded before rolling twice more. Similarly, if a bowler rolls a spare in the last frame, one more roll is required before the final score can be tallied.</p>
+            </div>
+            <img src="/w3images/coffeeshop.jpg" style="width:100%;max-width:1000px" class="margin-top">
+        </div>
     </div>
-    <div class="col s3">
-      <a href="#menu" class="button block black">MENU</a>
+
     </div>
-    <div class="col s3">
-      <a href="#where" class="button block black">WHERE</a>
-    </div>
-  </div>
-</div>
 
-<header class="bgimg display-container grayscale-min" id="home">
-  <div class="display-middle center">
-    <span class="text-white" style="font-size:90px">Bowling<br>Life</span>
-</header>
+    <footer class="center light-grey padding-10 large">
+        <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="hover-text-green">w3.css</a></p>
+    </footer>
 
-<div class="sand grayscale large">
+    <script>
+        // Tabbed Menu
+        function openMenu(evt, menuName) {
+            var i, x, tablinks;
+            x = document.getElementsByClassName("menu");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablink");
+            for (i = 0; i < x.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" dark-grey", "");
+            }
+            document.getElementById(menuName).style.display = "block";
+            evt.currentTarget.firstElementChild.className += " dark-grey";
+        }
+        document.getElementById("myLink").click();
 
-<div class="container" id="about">
-  <div class="content" style="max-width:700px">
-    <h5 class="center padding-64"><span class="tag wide">ABOUT THE SPORT</span></h5>
-    <h2>What is bowling?</h2>
-
-        <h3>The Lane and Equipment</h3>
-        <p>The playing surface is a lane, 60 feet long from the foul line to the head pin 42 inches wide. On either side of the lane are gutters; if the ball goes off the edge of the lane, it will drop into the gutter and be carried past the pins. The approach is an area 15 feet long, ending at the foul line. The bowler, in making the approach, must not step over the line; 60 feet beyond it is the headpin. The pins are arranged in four rows, with one pin in the first row, two in the second, three in the third, and four in the fourth. They are numbered 1-10; the pins themselves don't carry specific numbers, but the spots on which they are placed do.</p>
-
-        <p>The regulation pin is made of hard maple; it is 15 inches high and has a diameter of 2 ¼ inches at the base and a circumference of 15 inches at its widest point. Weight must be between 3 pounds, 6 ounces and 3 pounds, 10 ounces. The regulation ball is of solid composition, has a circumference of no more than 27 inches, and weighs 10 to 16 pounds. A ball may have two or three finger holes; most bowlers use the three-holed ball, inserting the two middle fingers and the thumb into the holes.</p>
-
-        <p>Bowling in ordinary shoes isn't permitted, because it can damage the lanes. The peculiarities of the sport demand an unmatched pair of shoes. The right-handed bowler wears a left shoe with a relatively slippery sole, usually of hard leather or vinyl, and a right shoe with a rubber sole that will help "brake."</p>
-
-        <h3>Progress of Play</h3>
-        <p>A game is made up of 10 frames. Each frame represents one turn for the bowler, and in each turn the player is allowed to roll the ball twice. If the player knocks down all the pins with the first roll, it is a strike; if not, a second roll at the pins still standing is attempted. If all the pins are knocked down with two balls, it is a spare; if any pins are left standing, it is an "open frame."</p>
-
-        <p>If a bowler commits a foul, by stepping over the foul line during delivery, it counts as a shot, and any pins knocked down are re-spotted without counting. If pins are knocked down by a ball that has entered the gutter, or by a ball bouncing off the rear cushion, they do not count, and are re-spotted.</p>
-
-        <h3>Scoring</h3>
-        <a href="https://www.bowl.com/Welcome/Welcome_Home/Keeping_Score/"><img src="https://www.bowl.com/uploadedImages/Source/Source_Home/frame-full-set-empty.png" alt="Guide to Scoring" /></a>
-        <p>In an open frame, a bowler simply gets credit for the number of pins knocked down. In the case of a spare, a slash mark is recorded in a small square in the upper right-hand corner of that frame on the score sheet, and no score is entered until the first ball of the next frame is rolled.</p>
-        
-        <p>Then credit is given for 10 plus the number of pins knocked down with that next ball. For example, a player rolls a spare in the first frame; with the first ball of the second frame, the player knocks down seven pins. The first frame, then, gets 17 points. If two of the remaining three pins get knocked down, 9 pins are added, for a total of 26 in the second frame.</p>
-
-        <p>If a bowler gets a strike, it is recorded with an X in the small square, the score being 10 plus the total number of pins knocked down in the next two rolls. Thus, the bowler who rolls three strikes in a row in the first three frames gets credit for 30 points in the first frame.</p>
-
-        <p>Bowling's perfect score, a <a href="https://en.wikipedia.org/wiki/Perfect_game_(bowling)">300 game</a>, represents 12 strikes in a row--a total of 120 pins knocked down. Why 12 strikes, instead of 10? Because, if a bowler gets a strike in the last frame, the score for that frame can't be recorded before rolling twice more. Similarly, if a bowler rolls a spare in the last frame, one more roll is required before the final score can be tallied.</p>
-    </div>
-    <img src="/w3images/coffeeshop.jpg" style="width:100%;max-width:1000px" class="margin-top">
-  </div>
-</div>
-
-</div>
-
-<footer class="center light-grey padding-10 large">
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="hover-text-green">w3.css</a></p>
-</footer>
-
-<script>
-// Tabbed Menu
-function openMenu(evt, menuName) {
-  var i, x, tablinks;
-  x = document.getElementsByClassName("menu");
-  for (i = 0; i < x.length; i++) {
-     x[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablink");
-  for (i = 0; i < x.length; i++) {
-     tablinks[i].className = tablinks[i].className.replace(" dark-grey", "");
-  }
-  document.getElementById(menuName).style.display = "block";
-  evt.currentTarget.firstElementChild.className += " dark-grey";
-}
-document.getElementById("myLink").click();
-</script>
+    </script>
 
 </body>
+
 </html>
