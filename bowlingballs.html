@@ -5,80 +5,81 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="styles.css">
 <style>
-body, html {
-    height: 100%;
-    font-family: "Inconsolata", sans-serif;
-}
-.bgimg {
-    background-position: center;
-    background-size: cover;
-    background-image: url("pins_redball.jpg");
-    min-height: 75%;
-}
-.menu {
-    display: none;
-}
+    body,
+    html {
+        height: 100%;
+        font-family: "Inconsolata", sans-serif;
+    }
+
+    .bgimg {
+        background-position: center;
+        background-size: cover;
+        background-image: url("pins_redball.jpg");
+        min-height: 75%;
+    }
+
+    .menu {
+        display: none;
+    }
 </style>
+
 <body>
 
-<!-- Links (sit on top) -->
-<div class="top">
-  <div class="row padding black">
-    <div class="col s3">
-      <a href="index.html" class="button block black">HOME</a>
+    <div class="top">
+        <div class="row padding black">
+            <div class="col s3">
+                <a href="index.html" class="button block black">HOME</a>
+            </div>
+            <div class="col s3">
+                <a href="about.html" class="button block black">ABOUT</a>
+            </div>
+            <div class="col s3">
+                <a href="#" class="button block black">BOWLING BALLS</a>
+            </div>
+            <div class="col s3">
+                <a href="#" class="button block black"></a>
+            </div>
+        </div>
     </div>
-    <div class="col s3">
-      <a href="about.html" class="button block black">ABOUT</a>
+
+    <header class="bgimg display-container grayscale-min" id="home">
+        <div class="display-middle center">
+            <span class="text-white" style="font-size:90px">Bowling<br>Life</span>
+    </header>
+
+    <div class="sand grayscale large">
+
+        <div class="container" id="about">
+            <div class="content" style="max-width:700px">
+                <h5 class="center padding-64"><span class="tag wide">BOWLING BALLS</span></h5>
+                <p>Bowling Balls are the primary compenent of bowling. There are balls for straight tracetories as well as the famous curved shots. Different balls can hook in different ways depending on a persons bowling style. Balls for straight shots tend to be made of urethane or plastic with no special weight in it. I tend to prefer <a href="https://www.stormbowling.com/balls">Storm</a> balls just beacause of the reliability and consistent quality. If you are a beginner I'd reccomend any basic urethane ball to practice reliably getting the ball to the end of the lane. If you are moving into more intermediate play, I love <a href="http://matchmaker.stormbowling.com/">this tool</a> to help choose a ball. Note that it only reccomends Storm balls. To use the tool you will need to find information about your release such as axis tilt and axis rotation. Here are two videos by Storm to refer to when measuring these stats.</p>
+                <iframe width="700" height="394" src="https://www.youtube.com/embed/fkRscXz5JTU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="700" height="394" src="https://www.youtube.com/embed/I-btz1SpFtw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+
     </div>
-    <div class="col s3">
-      <a href="#menu" class="button block black">MENU</a>
-    </div>
-    <div class="col s3">
-      <a href="#where" class="button block black">WHERE</a>
-    </div>
-  </div>
-</div>
 
-<!-- Header with image -->
-<header class="bgimg display-container grayscale-min" id="home">
-  <div class="display-middle center">
-    <span class="text-white" style="font-size:90px">Bowling<br>Life</span>
-</header>
+    <footer class="center light-grey padding-10 small">
+        <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="hover-text-green">w3.css</a></p>
+    </footer>
 
-<!-- Add a background color and large text to the whole page -->
-<div class="sand grayscale large">
-
-<!-- About Container -->
-<div class="container" id="about">
-  <div class="content" style="max-width:700px">
-  </div>
-</div>
-
-<!-- End page content -->
-</div>
-
-<!-- Footer -->
-<footer class="center light-grey padding-10 small">
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="hover-text-green">w3.css</a></p>
-</footer>
-
-<script>
-// Tabbed Menu
-function openMenu(evt, menuName) {
-  var i, x, tablinks;
-  x = document.getElementsByClassName("menu");
-  for (i = 0; i < x.length; i++) {
-     x[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablink");
-  for (i = 0; i < x.length; i++) {
-     tablinks[i].className = tablinks[i].className.replace(" dark-grey", "");
-  }
-  document.getElementById(menuName).style.display = "block";
-  evt.currentTarget.firstElementChild.className += " dark-grey";
-}
-document.getElementById("myLink").click();
-</script>
+    <script>
+        function openMenu(evt, menuName) {
+            var i, x, tablinks;
+            x = document.getElementsByClassName("menu");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablink");
+            for (i = 0; i < x.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" dark-grey", "");
+            }
+            document.getElementById(menuName).style.display = "block";
+            evt.currentTarget.firstElementChild.className += " dark-grey";
+        }
+        document.getElementById("myLink").click();
+    </script>
 
 </body>
 </html>
